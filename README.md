@@ -3,6 +3,13 @@
 It looks like its supposed to be some CLI application
 that stores sales information to produce an invoice.
 
+## Dependencies
+
+* Shell interpreter
+* `javac`
+* A Java runtime environment 
+* A brain
+
 ## Building/Running
 
 I didn't want to use Netbeans or any IDE because
