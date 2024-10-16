@@ -33,16 +33,20 @@ private Vector<Purchase> purchases;
       }
     }
 
-    try {
-      System.out.printf("Enter sale amount: ");
-      while(p.calculateSalesAmount(Util.stdInScanner().nextDouble()) < 0){}
-      Util.stdInScanner().nextLine();
-    }catch(InputMismatchException e) {
-      System.out.println("Enter a valid positive number as the sales amount");
-      Util.stdInScanner().nextLine();
+    boolean valid_amount = false;
+
+    while(!valid_amount) {
+      try {
+        System.out.printf("Enter sale amount: ");
+        while(p.calculateSalesAmount(Util.stdInScanner().nextDouble()) < 0){}
+        Util.stdInScanner().nextLine();
+      }catch(InputMismatchException e) {
+        System.out.println("Enter a valid positive number as the sales amount");
+        Util.stdInScanner().nextLine();
+      }
     }
-    
-    this.purchases.add(p);
+   
+  this.purchases.add(p);
   }
 
   void showPurchases() {
