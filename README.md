@@ -5,7 +5,7 @@ that stores sales information to produce an invoice.
 
 ## Dependencies
 
-* Shell interpreter
+* POSIX Shell interpreter (sorry Windows noobs)
 * `javac`
 * A Java runtime environment 
 * A brain
