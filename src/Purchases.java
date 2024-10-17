@@ -40,6 +40,7 @@ private Vector<Purchase> purchases;
         System.out.printf("Enter sale amount: ");
         while(p.calculateSalesAmount(Util.stdInScanner().nextDouble()) < 0){}
         Util.stdInScanner().nextLine();
+        valid_amount = true;
       }catch(InputMismatchException e) {
         System.out.println("Enter a valid positive number as the sales amount");
         Util.stdInScanner().nextLine();
