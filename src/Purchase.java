@@ -10,7 +10,7 @@ public class Purchase {
   Purchase() { }
 
   public int addItems(String name) {
-    if (!Util.nameOkay(String.copyValueOf(name.toCharArray()))) {
+    if (!Util.nameOkay(name)) {
       System.out.println("Enter a unique item name!");
       return -1;
     }
