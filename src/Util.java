@@ -21,8 +21,7 @@ public class Util {
 
   static boolean readYesNo() {
     char yn = scanner.nextLine().toLowerCase().charAt(0);
-
-    return yn == 'y' ? true: false;
+    return yn == 'y';
   }
 
   public static Scanner stdInScanner() {
