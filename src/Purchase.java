@@ -5,7 +5,7 @@ public class Purchase {
   private Vector<String> items = new Vector<String>();
   private int invoice_number;
   private double sale_amount;
-  private double sales_tax = 1.06;
+  private final double sales_tax = 1.06;
 
   Purchase() { }
 
@@ -32,7 +32,7 @@ public class Purchase {
       System.out.println("Enter a valid positive number as the sales amount");
       return -1;
     }
-    this.sale_amount = sale * this.sales_tax;
+    this.sale_amount = sale * sales_tax;
     return 0;
   }
 
