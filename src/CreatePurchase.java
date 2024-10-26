@@ -4,7 +4,7 @@ public class CreatePurchase{
     Purchases purchases = new Purchases();
 
     purchases.addPurchases();
-    purchases.showPurchases();
 
+    purchases.showPurchases();
   }
 }

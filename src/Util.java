@@ -1,5 +1,5 @@
+import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Vector;
 
 
 /*  Class for utility methods to make functionality smoother
@@ -15,7 +15,7 @@ import java.util.Vector;
 public class Util {
 
   private static final Scanner scanner = new Scanner(System.in);
-  private static Vector<String> string_tracker = new Vector<String>();
+  private static ArrayList<String> string_tracker = new ArrayList<String>();
 
   private Util(){}
 

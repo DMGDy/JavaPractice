@@ -1,8 +1,8 @@
-import java.util.Vector;
+import java.util.ArrayList;
 
 public class Purchase {
 
-  private Vector<String> items = new Vector<String>();
+  private ArrayList<String> items = new ArrayList<>();
   private int invoice_number;
   private double sale_amount;
   private final double sales_tax = 1.06;
@@ -41,7 +41,7 @@ public class Purchase {
     System.out.printf("Displaying Purchase information for invoice %d:\n"
         ,this.invoice_number);
 
-    if(this.items.capacity() > 1) {
+    if(this.items.size() > 1) {
 
       System.out.println("\tItems:");
 
@@ -51,7 +51,7 @@ public class Purchase {
 
     }
     else {
-      System.out.printf("\tItem:\n\t\t%s\n",this.items.firstElement());
+      System.out.printf("\tItem:\n\t\t%s\n",this.items.getFirst());
     }
 
     System.out.printf("\tSale amount:\n\t\t%,.2f\n",this.sale_amount);

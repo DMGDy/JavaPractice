@@ -1,18 +1,18 @@
+import java.util.ArrayList;
 import java.util.InputMismatchException;
-import java.util.Vector;
 
 public class Purchases {
 
-private Vector<Purchase> purchases; 
+private ArrayList<Purchase> purchases; 
 
   Purchases() {
-    this.purchases = new Vector<Purchase>();
+    this.purchases = new ArrayList<>();
   }
 
   void addPurchases() {
-    Purchase p = new Purchase();
 
     do {
+      Purchase p = new Purchase();
       do{
         do {
           System.out.printf("Enter item name: ");
